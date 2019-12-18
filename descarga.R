@@ -1,7 +1,7 @@
 #install.packages("rvest")
 library(rvest)
 
-htmlML <- "https://auto.mercadolibre.cl/MLC-514907835-hyundai-accent-gl-14-_JM#position=1&type=item&tracking_id=ccc933d7-decb-44d8-951e-c14d3dffc0a5"
+htmlML <- "https://autos.mercadolibre.cl/"
 paginaML <- read_html(htmlML)
 
 paginaEntrar <- html_nodes(paginaML,".item-link item__js-link")
